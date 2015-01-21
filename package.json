@@ -1,6 +1,6 @@
 {
   "name": "widow",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Add non breaking spaces to the ends of block level elements.",
   "license": "MIT",
   "homepage": "https://github.com/ben-eb/widow",
