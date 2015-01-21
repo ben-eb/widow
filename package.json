@@ -1,0 +1,38 @@
+{
+  "name": "widow",
+  "version": "0.0.0",
+  "description": "Add non breaking spaces to the ends of block level elements.",
+  "license": "MIT",
+  "homepage": "https://github.com/ben-eb/widow",
+  "author": {
+    "name": "Ben Briggs",
+    "email": "therealbenbriggs@hotmail.com",
+    "url": "http://beneb.info"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "object-assign": "^2.0.0"
+  },
+  "devDependencies": {
+    "brfs": "^1.2.0",
+    "browserify": "^7.0.1",
+    "mocha": "^2.1.0",
+    "tap-spec": "^2.2.0",
+    "tape": "^3.0.3",
+    "tape-run": "^0.3.0"
+  },
+  "keywords": [
+    "typography",
+    "widow",
+    "widows"
+  ],
+  "scripts": {
+    "test": "mocha test.node.js && browserify -t brfs test.browser.js | tape-run | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ben-eb/widow.git"
+  },
+  "browser": "browser.js"
+}
