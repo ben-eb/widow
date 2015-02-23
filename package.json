@@ -17,7 +17,6 @@
   "devDependencies": {
     "brfs": "^1.2.0",
     "browserify": "^7.0.1",
-    "mocha": "^2.1.0",
     "tap-spec": "^2.2.0",
     "tape": "^3.0.3",
     "tape-run": "^0.3.0"
@@ -28,7 +27,7 @@
     "widows"
   ],
   "scripts": {
-    "test": "mocha test.node.js && browserify -t brfs test.browser.js | tape-run | tap-spec"
+    "test": "tape test.node.js | tap-spec && browserify -t brfs test.browser.js | tape-run | tap-spec"
   },
   "repository": {
     "type": "git",
