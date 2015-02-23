@@ -12,7 +12,8 @@ module.exports = function (options) {
     Array.prototype.forEach.call(selectors, function (element) {
         var words = element.innerHTML.split(' ');
         var len = words.length;
-        if (len > 1 && words[len - 2].length + words[len - 1].length < options.maxLength) {
+        if (element.textContent.split(' ').length > 1 &&
+            words[len - 2].length + words[len - 1].length < options.maxLength) {
             words[len - 2] += '&nbsp;' + words[len - 1];
             var lastWord = words.pop().replace(/.*((?:<\/\w+>)*)$/, '$1');
             element.innerHTML = words.join(' ') + lastWord;
