@@ -11,15 +11,15 @@
   },
   "main": "index.js",
   "dependencies": {
-    "cheerio": "^0.18.0",
-    "object-assign": "^2.0.0"
+    "cheerio": "^0.19.0",
+    "object-assign": "^3.0.0"
   },
   "devDependencies": {
-    "brfs": "^1.2.0",
-    "browserify": "^7.0.1",
-    "tap-spec": "^2.2.0",
-    "tape": "^3.0.3",
-    "tape-run": "^0.3.0"
+    "brfs": "^1.4.0",
+    "browserify": "^10.2.4",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0",
+    "tape-run": "^1.0.0"
   },
   "keywords": [
     "typography",
